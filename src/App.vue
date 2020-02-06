@@ -23,6 +23,11 @@ export default {
 
     const city = userData.address?.city;
     console.log(city);
+    const mail = userData.mail?.main;
+    console.log(mail);
+  
+    console.log('this is globalThis');
+    console.log(globalThis);
 
     import('lodash').then((_) => {
       console.log(_.size(userData));
