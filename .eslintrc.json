@@ -1,6 +1,7 @@
 {
     "env": {
         "browser": true,
+        "node": true,
         "es2020": true
     },
     "extends": [
@@ -9,7 +10,8 @@
     ],
     "globals": {
         "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
+        "SharedArrayBuffer": "readonly",
+        "globalThis": false
     },
     "parserOptions": {
         "ecmaVersion": 2020,
